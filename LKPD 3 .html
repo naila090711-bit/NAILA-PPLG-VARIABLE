@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LKPD JavaScript</title>
+</head>
+<body>
+
+    <h1>LKPD JavaScript — String, Number, dan Konversi Data</h1>
+
+    <p><b>Satuan Pendidikan:</b> SMKN 1 GARUT</p>
+    <p><b>Mata Pelajaran:</b> Dasar-Dasar Pengembangan Perangkat Lunak dan Gim</p>
+    <p><b>Kelas/Fase:</b> X / Fase E</p>
+    <p><b>Nama:</b> Naila Putri Tasgar</p>
+    <p><b>Kelas / No. Absen:</b> X PPLG 1 / 21</p>
+    
+
+    <h2>C. Aktivitas 1 — Eksperimen 10 + 20</h2>
+
+    <pre>
+let a = "10";
+let b = "20";
+console.log(a + b);
+    </pre>
+    <img src="DDPPLG/aktivitas 1.jpg" width="100℅"/>
+        
+    <p><b>1. Apa output program?</b></p>
+    <p>1020</p>
+
+    <p><b>2. Mengapa hasil tersebut terjadi?</b></p>
+    <p>Karena a dan b bertipe String, sehingga tanda + menggabungkan teks, bukan menjumlahkan angka.</p>
+
+    <p><b>3. Apakah a dan b bertipe Number?</b></p>
+    <p>Tidak, keduanya bertipe String karena nilainya menggunakan tanda kutip.</p>
+
+    <p><b>Hasil uji dan penjelasan:</b></p>
+    <p>Prediksi saya benar. Output-nya 1020 karena kedua nilai merupakan String.</p>
+
+    <h2>D. Aktivitas 2 — Menemukan Tipe Data</h2>
+
+    <pre>
+let nama = "Asep";
+let umur = 16;
+console.log(typeof nama);
+console.log(typeof umur);
+    </pre>
+         <img src="DDPPLG/aktivitas 2.jpg" width="100℅"/>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Variabel</th>
+            <th>Prediksi</th>
+            <th>Hasil typeof</th>
+            <th>Kesimpulan</th>
+        </tr>
+        <tr>
+            <td>nama</td>
+            <td>String</td>
+            <td>string</td>
+            <td>Berisi teks</td>
+        </tr>
+        <tr>
+            <td>umur</td>
+            <td>Number</td>
+            <td>number</td>
+            <td>Berisi angka</td>
+        </tr>
+    </table>
+
+    <p><b>Temuan:</b></p>
+    <p>String digunakan untuk menyimpan teks, sedangkan Number digunakan untuk menyimpan angka yang dapat dihitung.</p>
+
+    <h2>E. Aktivitas 3 — Konversi String Menjadi Number</h2>
+
+    <pre>
+let a = "10";
+let b = "20";
+let hasil = Number(a) + Number(b);
+console.log(hasil);
+    </pre>
+ <img src="DDPPLG/aktivitas 3.jpg" width="100℅"/>
+
+    <p><b>Hasil program:</b> 30</p>
+
+    <h2>F. Aktivitas 4 — Program Kasir Sederhana</h2>
+
+    <pre>
+let harga = Number(prompt("Masukkan harga: "));
+let jumlah = Number(prompt("Masukkan jumlah: "));
+let total = harga * jumlah;
+console.log("Total belanja = " + total);
+    </pre>
+      <img src="DDPPLG/aktivitas 4.jpg" width="100℅"/>
+
+    <table border="1" cellpadding="8">
+        <tr>
+            <th>Input Uji</th>
+            <th>Nilai</th>
+        </tr>
+        <tr>
+            <td>Harga</td>
+            <td>Rp10.000</td>
+        </tr>
+        <tr>
+            <td>Jumlah</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td>Total seharusnya</td>
+            <td>Rp20.000</td>
+        </tr>
+        <tr>
+            <td>Total program</td>
+            <td>Rp20.000</td>
+        </tr>
+    </table>
+
+    <h2>G. Tantangan — Program Hitung Nilai</h2>
+
+    <p><b>Algoritma saya:</b></p>
+    <ol>
+        <li>Meminta pengguna memasukkan nilai tugas, UTS, dan UAS.</li>
+        <li>Mengubah semua input menjadi Number menggunakan Number().</li>
+        <li>Menjumlahkan ketiga nilai.</li>
+        <li>Membagi jumlah nilai dengan 3 untuk mendapatkan rata-rata.</li>
+    </ol>
+
+    <pre>
+let tugas = Number(prompt("Masukkan nilai tugas:"));
+let uts = Number(prompt("Masukkan nilai UTS:"));
+let uas = Number(prompt("Masukkan nilai UAS:"));
+
+let rataRata = (tugas + uts + uas) / 3;
+
+console.log("Rata-rata nilai = " + rataRata);
+    </pre>
+    <img src="DDPPLG/tantangan.jpg" width="100℅"/>
+
+    <h2>H. Think — Pair — Share</h2>
+
+    <p><b>1. Mengapa prompt() perlu dikonversi jika hasilnya ingin dihitung?</b></p>
+    <p>Karena prompt() menghasilkan String, sehingga harus diubah menjadi Number agar dapat dihitung.</p>
+
+    <p><b>2. Apa perbedaan "10" dengan 10?</b></p>
+    <p>"10" adalah String atau teks, sedangkan 10 adalah Number atau angka.</p>
+
+    <p><b>3. Apa yang terjadi jika lupa Number()?</b></p>
+    <p>Input tetap berupa String. Jika menggunakan tanda +, nilainya dapat digabungkan, bukan dijumlahkan.</p>
+
+    <p><b>Pair:</b></p>
+    <p>Jawaban saya dan teman bisa sama atau berbeda karena cara menjelaskan berbeda, tetapi hasil percobaannya tetap sama.</p>
+
+    <p><b>Share:</b></p>
+    <p>Saya menemukan bahwa prompt() menghasilkan String sehingga perlu Number() jika input akan digunakan untuk perhitungan.</p>
+
+    <h2>I. Refleksi 3–2–1</h2>
+
+    <p><b>3 hal yang saya pahami:</b></p>
+    <ol>
+        <li>String digunakan untuk menyimpan teks.</li>
+        <li>Number digunakan untuk menyimpan angka.</li>
+        <li>Number() dapat mengubah String menjadi Number.</li>
+    </ol>
+
+    <p><b>2 hal yang masih membingungkan:</b></p>
+    <ol>
+        <li>Menangani input yang bukan angka.</li>
+        <li>Menggunakan konversi tipe data pada program yang lebih panjang.</li>
+    </ol>
+
+    <p><b>1 hal yang ingin saya coba pada program berikutnya:</b></p>
+    <p>Membuat program kasir sederhana yang dapat menghitung beberapa barang.</p>
+
+    <h2>J. Penilaian Diri</h2>
+
+    <ul>
+        <li>Saya dapat membedakan String dan Number: Ya.</li>
+        <li>Saya memahami prompt() menghasilkan String: Ya.</li>
+        <li>Saya dapat menggunakan Number(): Ya.</li>
+        <li>Saya dapat menggunakan String(): Ya.</li>
+        <li>Saya dapat menemukan kesalahan tipe data: Ya.</li>
+        <li>Saya dapat membuat program input dan hitung sederhana: Ya.</li>
+    </ul>
